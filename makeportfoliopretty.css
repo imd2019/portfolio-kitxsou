@@ -5,3 +5,98 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+}
+
+nav {
+  padding-top: 3rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+nav ul li {
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.nav-link {
+  flex: 1;
+  border-bottom: black 2px solid;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3.5fr 6.5fr;
+  height: 100vh;
+}
+
+.left-panel {
+  background-color: #d8b8f2;
+}
+
+.right-panel {
+  background-color: white;
+}
+
+.circle {
+  z-index: 1;
+  position: absolute;
+  top: 10rem;
+  left: 20rem;
+  border-radius: 999px;
+  width: 35rem;
+  height: 35rem;
+  background-color: white;
+  background-image: url("/me.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+}
+
+.name {
+  z-index: 2;
+  position: absolute;
+  top: 30rem;
+  left: 10rem;
+  font-size: 3rem;
+  color: white;
+  opacity: 0.4;
+}
+
+.text {
+  width: 40rem;
+}
+
+h2 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+.center-me-baybe {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-me-baybe div.text {
+  width: 40rem;
+}
